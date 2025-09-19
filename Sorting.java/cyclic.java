@@ -9,7 +9,6 @@ public class cyclic{
             i++;
         }else{
             swap(arr,i,correctIndex);
-
         }
       }
     }
@@ -18,7 +17,6 @@ public class cyclic{
         CyclicSort(arr);
         System.out.println(Arrays.toString(arr));
     }
-
     private static void swap(int[] arr, int i, int correctIndex) {
        int temp=arr[i];
        arr[i]=arr[correctIndex];
