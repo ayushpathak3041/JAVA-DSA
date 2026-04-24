@@ -1,9 +1,3 @@
-package com.kunal.introduction;
-
-import java.sql.Struct;
-import java.util.ArrayList;
-import java.util.Arrays;
-
 public class lec1 {
     public static void main(String[] args) {
         // store 5 roll nos

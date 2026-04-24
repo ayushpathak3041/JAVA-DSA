@@ -1,6 +1,6 @@
+
 // Package declaration - linked list ko organize karne ke liye
-package Linkedlist;
-// LL class ka definition - yeh linked list ko represent karti hai
+package JAVA_DSA.Linkedlist;// LL class ka definition - yeh linked list ko represent karti hai
 public class LL {              
 
     // head variable - linked list ka pehla node, jahan se start hota hai
