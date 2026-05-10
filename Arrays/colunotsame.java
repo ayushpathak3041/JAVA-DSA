@@ -1,4 +1,4 @@
-public class colunotsame {
+public class Colunotsame {
     // we are using this because columns are not same
 //     arr
 //  │

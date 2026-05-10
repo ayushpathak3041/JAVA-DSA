@@ -1,3 +1,4 @@
+package Linkedlist;
 
 
 //     private Node head;
@@ -72,11 +73,11 @@
         
 //     }
 // }
-public class singlypractice{
+public class Singlypractice{
      private Node head;
      private Node tail;
      private int size;
-     public singlypractice(){
+     public Singlypractice(){
            this.size=0;
      }
      public class Node{
@@ -136,7 +137,7 @@ public class singlypractice{
           System.out.println("End");
     }
     public static  void main(String[] args) {
-        singlypractice list = new singlypractice();
+        Singlypractice list = new Singlypractice();
         list.insertFirst(3);
         list.insertFirst(2);
         list.insertFirst(8);

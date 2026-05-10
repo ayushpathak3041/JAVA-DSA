@@ -12,7 +12,7 @@ class Student {
 }
 
 // ========== MAIN CLASS & ENTRY POINT ==========
-public class examp {
+public class Examp {
     // Main method: entry point of the Java program
     public static void main(String[] args) {
         // STEP 1: Create an array of Student references (not actual objects yet)

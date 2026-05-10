@@ -1,4 +1,4 @@
-public class intro {
+public class Intro {
     public static void main(String[] args) {
         //✅ EVEN MORE ADVANCED: Return value using switch
 //         int day = 3;

@@ -1,4 +1,4 @@
-public class info {
+public class Info {
 /*Initial Range: |--------------------|
                2                  899
 mid = 54 → target > 54 → Search Right

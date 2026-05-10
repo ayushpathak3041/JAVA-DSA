@@ -9,6 +9,6 @@ public class Q6Reverse {
         reverse=reverse*10+digit;
         n =n/10;
     }
-       return reverse;
+       return Reverse;
     }
 }

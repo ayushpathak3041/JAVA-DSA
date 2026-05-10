@@ -1,7 +1,7 @@
 
 import java.util.Arrays;
 
-public class byfunction {
+public class Byfunction {
     public static void main(String[] args) {
         int[] num={3,4,6,67};
         System.out.println(Arrays.toString(num));

@@ -1,5 +1,6 @@
 // Package declaration - linked list ko organize karne ke liye
-package JAVA_DSA.Linkedlist;// LL class ka definition - yeh linked list ko represent karti hai
+package Linkedlist;
+// LL class ka definition - yeh linked list ko represent karti hai
 public class LL {              
 
     // head variable - linked list ka pehla node, jahan se start hota hai
@@ -13,7 +14,6 @@ public class LL {
         size = 0;
         // head null rehta hai kyunki list empty hai
     }
-
     // 🔹 Node class - linked list ka ek building block, har node yahan se banata hai
     private class Node {
         // value - node mein actual data store hota hai
@@ -56,7 +56,6 @@ public class LL {
         // Last mein "null" likha hai taki pata chale list khatam ho gaya
         System.out.println("null");
     }
-
     // 🔹 main method - program yahaan se shuru hota hai
     public static void main(String[] args) {
         // Naya LL object banate hain (empty linked list)
@@ -207,4 +206,4 @@ head → [30|→] → [20|→] → [10|null]
 ✗ Traversal slow hota hai (start se end tak Jana padta hai)
 
 ╚════════════════════════════════════════════════════════════════════════════╝
-*/
+*/                  

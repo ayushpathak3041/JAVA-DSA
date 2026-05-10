@@ -1,4 +1,4 @@
-public class orderAgnostic {/*
+public class OrderAgnostic {/*
  Order Agnostic Binary Search
    Ascending Array: [2, 4, 6, 8, 10]
    Descending Array: [10, 8, 6, 4, 2]

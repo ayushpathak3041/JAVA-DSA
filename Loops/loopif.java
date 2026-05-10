@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class loopif {
+public class Loopif {
     public static void main(String[] args) {
         if(true){
             System.out.println("There is no GOD");

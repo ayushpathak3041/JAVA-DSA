@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class fabonacci {
+public class Fabonacci {
 // find nth faboancci number
 //     Fib(0) = 0, Fib(1) = 1
 // 📌 Fib(n) = Fib(n-1) + Fib(n-2)

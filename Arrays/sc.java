@@ -4,6 +4,6 @@
  */
 
 
-class sc {
+class Sc {
 
 }

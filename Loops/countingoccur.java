@@ -1,4 +1,4 @@
-public class countingoccur {
+public class Countingoccur {
     public static void main(String[] args) {
 /*✅ Problem Statement: Counting Occurrence
 👉 Goal:
