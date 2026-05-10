@@ -8,8 +8,8 @@ public class info{
         // or int[] roll_num = {23,2,43,54,34};
         // because array contains similar datatype variable
 
-        int[] ros; // declaration of arr  ay. ros is getting defined in stack
-        ros=new int[5];// initialization .actually here object is being created in the memory(heap)
+        int[] ros; // (declaration) of arr  ay. ros is (getting) (-defined in stack-)
+        ros=new int[5];// (initialization) .actually here (object is being created) in the memory(heap)
               
 
 //  [Array object: stores references]

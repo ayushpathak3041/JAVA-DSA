@@ -1,4 +1,3 @@
-
 // Package declaration - linked list ko organize karne ke liye
 package JAVA_DSA.Linkedlist;// LL class ka definition - yeh linked list ko represent karti hai
 public class LL {              
