@@ -5,7 +5,8 @@ mid = 54 → target > 54 → Search Right
 New Range:              |-------------|
                         65           899
 mid = 98 → target < 98 → Search Left
-New Range:              |-----|
+New 
+kffjgniRange:              |-----|
                         65   78
 mid = 76 → target == 76 → FOUND ✅
 */
@@ -55,7 +56,6 @@ mid = 76 → target == 76 → FOUND ✅
    - Best Case  → O(1)   (if middle element is target)
    - Worst Case → O(log n) (divide array by 2 each step)
    - Average Case → O(log n)
-
 ➡️ Space Complexity:
    - Iterative Binary Search → O(1)
    - Recursive Binary Search → O(log n) (because of recursion stack)

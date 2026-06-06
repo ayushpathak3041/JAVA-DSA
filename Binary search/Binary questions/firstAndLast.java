@@ -2,7 +2,7 @@
 import java.util.Arrays;
 
 // Class name = firstAndLast (Java program entry point)
-public class firstAndLast {
+public class FirstAndLast {
     public static void main(String[] args) {
 
         // A sorted array (important because Binary Search only works on sorted arrays)
@@ -27,13 +27,10 @@ public class firstAndLast {
 
         // Default answer = {-1, -1} → means "not found"
         int []ans={-1,-1};
-
         // Find first position → pass "true"
         int start=FindPosition(arr,target,true);
-
-        // Find last position → pass "false"
+        // Find last position → pass "false"--
         int end=FindPosition(arr,target,false);
-
         // Store results in ans[]
         ans[0]=start;
         ans[1]=end;

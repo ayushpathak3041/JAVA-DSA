@@ -1,7 +1,7 @@
-public class floor {
+public class Floor {
     public static void main(String[] args) {
         int arr[]={2,5,7,8,12,15,16,19,23,25,28};
-        int target=1;
+        int target=6;
         int ans = floor(arr,target);
         System.out.println(arr[ans]);
     }

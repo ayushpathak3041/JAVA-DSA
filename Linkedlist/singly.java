@@ -11,7 +11,7 @@ public Singly {
         this.size = 0;
     }
 
-    private class Node {
+    private class Node {                        
         public int value;
         public Node next;
 

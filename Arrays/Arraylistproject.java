@@ -2,7 +2,7 @@ import java.util.*;
 public class Arraylistproject{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        ArrayList<Integer> marks=new ArrayList<>();
+        ArrayList<Integer> marks=new ArrayList<>();    //  <>   =   <>()  --> generics (for dspecific data type
 
         while (true) {
             System.out.println("\n===== Student Marks Manager =====");

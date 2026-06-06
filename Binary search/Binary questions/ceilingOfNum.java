@@ -1,4 +1,4 @@
-public class ceilingOfNum {
+public class CeilingOfNum {
     public static void main(String[] args) {
         int arr[]={2,5,7,8,12,15,16,19,23,25,28};
         int target=3;
@@ -18,7 +18,7 @@ public static int ceiling(int[] arr,int target){
 
     // what is target is greater than last element of arr
     // then just return -1;
-    if(target>arr[arr.length-1]){
+    if(target>arr[end]){
         return -1;
     }
     int mid = start+(end-start)/2;
@@ -30,7 +30,6 @@ public static int ceiling(int[] arr,int target){
     }else{
         return mid;
     }
-
    }
    return start;
 
