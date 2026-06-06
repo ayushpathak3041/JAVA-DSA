@@ -1,4 +1,4 @@
-public class peakIndexInMountainArray {
+public class PeakIndexInMountainArray {
     public static void main(String[] args) {   
     }
     public int peakIndexInMountainArray(int[] arr) { 

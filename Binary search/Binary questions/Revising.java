@@ -1,54 +1,98 @@
+public class Revising {
 
-    public class Revising{
     public static void main(String[] args) {
-        
+
+        int[][] matrix = {
+                {10, 20, 30, 40},
+                {15, 25, 35, 45},
+                {28, 29, 37, 49},
+                {33, 34, 38, 50}
+        };
+
+        int[] ans = search(matrix, 37);
+
+        System.out.println(ans[0] + " " + ans[1]);
     }
-    public static int[] Search(int[][] matrix,int target){
-        int rows=matrix.length;
-        int cols=matrix[0].length-1;
-        int Rstart=0;
-        int Rend=rows-1;
-        int Cstart=0;
-        int Cend=cols-1;
-        int Cmid=cols/2;
 
-        while(Rstart<=Rend-1){
-            int Rmid=Rstart+(Rend-Rstart)/2;
-            if(matrix[Rmid][Cmid]==target){
-                return new int[]{Rmid,Cmid};
-            }else if(matrix[Rmid][Cmid]>target){
-                Rend=Rmid;
+    public static int[] search(int[][] matrix, int target) {
 
-        if(matrix[Rstart][Cmid-1]==target){
-          return BinarySearch(matrix,target,0,Rstart,Cmid-1);
-        }
-        if(matrix[Rstart+1][Cmid-1]==target){
-            return BinarySearch(matrix, target,Rstart+1,Rstart+1,Cmid-1);
-        }
-        if(matrix[Cmid+1][cols-1]==target){
-             return BinarySearch(matrix, target,Rstart+1,Cmid+1,Cmid-1);
-        }
-        if(matrix[Rstart+1][Cmid-1]==target){
-          return BinarySearch(matrix, target,Rstart+1,Rstart+1,Cmid-1);
+        int rows = matrix.length;
+        int cols = matrix[0].length;
+
+        if (rows == 1) {
+            return binarySearch(matrix, target, 0, 0, cols - 1);
         }
 
-    }
-    // row wise search
-    private static int[] BinarySearch(int[][] matrix, int target,int row, int Cstart, int Cend) {
-        
-        while(Cstart<=Cend){
-            int Mid=Cstart+(Cend-Cstart)/2;
-           
-            }else{
-                Rstart=Rmid;
+        int rStart = 0;
+        int rEnd = rows - 1;
+        int cMid = cols / 2;
+
+        while (rStart < (rEnd - 1)) {
+
+            int rMid = rStart + (rEnd - rStart) / 2;
+
+            if (matrix[rMid][cMid] == target) {
+                return new int[]{rMid, cMid};
+            }
+
+            if (matrix[rMid][cMid] < target) {
+                rStart = rMid;
+            } else {
+                rEnd = rMid;
             }
         }
-        if(matrix[Rstart][Cmid]==target){
-            return new int[]{Rstart,Cmid};
-        }else if(matrix[Rstart+1][Cmid]==target){
-            return new int[]{Rstart+1,Cmid};
 
+        // Check middle column of remaining 2 rows
+        if (matrix[rStart][cMid] == target) {
+            return new int[]{rStart, cMid};
         }
-        return new int[]{-1,-1};
+
+        if (matrix[rStart + 1][cMid] == target) {
+            return new int[]{rStart + 1, cMid};
+        }
+
+        // 1st quadrant
+        if (target <= matrix[rStart][cMid - 1]) {
+            return binarySearch(matrix, target, rStart, 0, cMid - 1);
+        }
+
+        // 2nd quadrant
+        if (target >= matrix[rStart][cMid + 1]
+                && target <= matrix[rStart][cols - 1]) {
+            return binarySearch(matrix, target, rStart, cMid + 1, cols - 1);
+        }
+
+        // 3rd quadrant
+        if (target <= matrix[rStart + 1][cMid - 1]) {
+            return binarySearch(matrix, target, rStart + 1, 0, cMid - 1);
+        }
+
+        // 4th quadrant
+        return binarySearch(matrix, target, rStart + 1,
+                cMid + 1, cols - 1);
+    }
+
+    public static int[] binarySearch(int[][] matrix,
+                                     int target,
+                                     int row,
+                                     int cStart,
+                                     int cEnd) {
+
+        while (cStart <= cEnd) {
+
+            int mid = cStart + (cEnd - cStart) / 2;
+
+            if (matrix[row][mid] == target) {
+                return new int[]{row, mid};
+            }
+
+            if (matrix[row][mid] < target) {
+                cStart = mid + 1;
+            } else {
+                cEnd = mid - 1;
+            }
+        }
+
+        return new int[]{-1, -1};
     }
 }
