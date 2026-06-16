@@ -4,7 +4,7 @@ package Linkedlist;
 public class LL {              
 
     // head variable - linked list ka pehla node, jahan se start hota hai
-    private Node head;
+    Node head;
     // size variable - kitne nodes hain iska count rakhta hai
     private int size;
 
