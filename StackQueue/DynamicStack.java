@@ -1,4 +1,4 @@
-public class DynamicStack extends CustomStack{// extend means inherit class
+public class DynamicStack extends CustomStack{// extend means inherit class (parent class inherit from another class)
     public DynamicStack(){
         super();// it will call CustomStack (class)
     }
@@ -6,7 +6,7 @@ public class DynamicStack extends CustomStack{// extend means inherit class
         super();
     }
     // in Dynamic Stack problem is only Push 
-    
+
   //  @Override
   public boolean push(int item){
     // this take care of being full

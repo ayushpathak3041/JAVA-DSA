@@ -5,15 +5,13 @@ public class BST {
 
     /// copy paste to BST
     private class Node {
-        int value;
+        int value=29;
         Node left;
         Node right;
-
-        Node(int value) {
+        Node(int value){
             this.value = value;
         }
     }
-
     private Node root;
 
     // Check if tree is empty
@@ -317,3 +315,166 @@ private void prettyDisplay(Node node, int level) {
 
 //     return node;
 // }
+
+
+
+/*
+=========================================
+populateSorted() KA MIND MAP
+=========================================
+
+Sorted Array:
+
+[1, 2, 3, 4, 5, 6, 7]
+
+Step 1:
+Puri array ka middle uthao
+
+        4
+       / \
+      ?   ?
+
+4 ko insert karo
+
+-----------------------------------------
+
+Ab Left Half:
+
+[1, 2, 3]
+
+Middle = 2
+
+        4
+       /
+      2
+     / \
+    ?   ?
+
+2 ko insert karo
+
+-----------------------------------------
+
+Ab Right Half:
+
+[5, 6, 7]
+
+Middle = 6
+
+        4
+       / \
+      2   6
+     / \ / \
+    ? ? ?  ?
+
+6 ko insert karo
+
+-----------------------------------------
+
+Ab 2 ke Left Half:
+
+[1]
+
+        4
+       / \
+      2   6
+     /
+    1
+
+-----------------------------------------
+
+Ab 2 ke Right Half:
+
+[3]
+
+        4
+       / \
+      2   6
+     / \
+    1   3
+
+-----------------------------------------
+
+Ab 6 ke Left Half:
+
+[5]
+
+        4
+       / \
+      2   6
+     / \ /
+    1  3 5
+
+-----------------------------------------
+
+Ab 6 ke Right Half:
+
+[7]
+
+          4
+        /   \
+       2     6
+      / \   / \
+     1   3 5   7
+
+=========================================
+
+KEY IDEA:
+
+Har call me:
+
+Range
+  ↓
+Middle Nikalo
+  ↓
+Insert Karo
+  ↓
+Left Half Repeat
+  ↓
+Right Half Repeat
+
+=========================================
+
+KYU?
+
+Normal insertion:
+
+1 2 3 4 5 6 7
+
+Banega:
+
+1
+ \
+  2
+   \
+    3
+     \
+      4
+
+Height = Bahut Zyada
+
+-----------------------------------------
+
+populateSorted():
+
+Middle pehle insert karta hai
+
+          4
+        /   \
+       2     6
+      / \   / \
+     1   3 5   7
+
+Height = Minimum
+
+Balanced BST Milta Hai
+
+=========================================
+*/
+
+
+
+
+
+
+
+
