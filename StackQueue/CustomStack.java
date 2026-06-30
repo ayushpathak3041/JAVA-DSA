@@ -30,9 +30,11 @@ public class CustomStack{
         }
         return false;
     }
+    //-----------------------------------
     public boolean isEmpty(){
         return ptr==-1;
     }
+    //----------------------------------
     public int pop() throws Exception{
         if(isEmpty()){
             throw new Exception("Cannot delete from empty stack");
@@ -44,6 +46,7 @@ public class CustomStack{
         // return data[ptr--];
         
     }
+    //---------------------------------------
     public int peek() throws StackException{
         if(isEmpty()){
             throw new StackException("cannot peek from empty stack");// this exception is created by myself 
